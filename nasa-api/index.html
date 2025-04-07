@@ -6,21 +6,20 @@
     <title>NASA Image Search</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./script.js"></script>
+    <link href="./styles/main.css" rel="stylesheet" />
   </head>
-  <body
-    class="bg-gray-900 text-white flex items-center justify-center min-h-screen"
-  >
-    <div
-      class="max-w-2xl w-full p-6 bg-gray-800 rounded-lg shadow-lg text-center"
-    >
+  <body class="text-white flex items-center justify-center min-h-screen">
+    <div class="max-w-2xl w-full p-6 bg-black rounded-lg shadow-lg text-center">
       <h1 class="text-2xl font-bold mb-4">NASA Image Search</h1>
 
       <div class="mb-4">
-        <label class="block text-left">Date (YYYY-MM-DD):</label>
+        <label class="block text-left rounded border border-white"
+          >Date (YYYY-MM-DD):</label
+        >
         <input
           type="date"
           id="date"
-          class="w-full p-2 rounded bg-gray-700 text-white"
+          class="w-full p-2 rounded border-white bg-black text-white"
         />
       </div>
 
@@ -29,7 +28,7 @@
         <input
           type="date"
           id="start-date"
-          class="w-full p-2 rounded bg-gray-700 text-white"
+          class="w-full p-2 rounded bg-black text-white"
         />
       </div>
 
@@ -38,7 +37,7 @@
         <input
           type="date"
           id="end-date"
-          class="w-full p-2 rounded bg-gray-700 text-white"
+          class="w-full p-2 rounded bg-black text-white"
         />
       </div>
 
@@ -49,7 +48,7 @@
         <input
           type="number"
           id="count"
-          class="w-full p-2 rounded bg-gray-700 text-white"
+          class="w-full p-2 rounded bg-black text-white"
           min="1"
           max="10"
         />
@@ -61,11 +60,15 @@
       >
         Search
       </button>
-
-      <div id="content" class="mt-6">
-        <h2 id="title" class="text-xl font-semibold mb-2"></h2>
-        <div id="media" class="mb-4"></div>
-        <p id="description" class="text-gray-300"></p>
+      <div id="container"></div>
+    </div>
+    <div class="container">
+      <div class="sky">
+        <div class="text"></div>
+        <div class="stars"></div>
+        <div class="stars1"></div>
+        <div class="stars2"></div>
+        <div class="shooting-stars"></div>
       </div>
     </div>
   </body>

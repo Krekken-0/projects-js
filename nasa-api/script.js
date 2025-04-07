@@ -9,11 +9,9 @@ let endDate = document.getElementById("end-date");
 let count = document.getElementById("count");
 let button = document.getElementById("search")
 
-/*Elements which will be used to display the result */
-let content = document.getElementById("content");
-let heading = document.getElementById("title");
-let media = document.getElementById("media");
-let description = document.getElementById("description");
+/*Div element which will be used to display the result */
+let container = document.getElementById("container");
+
 
 /*function to fetch data */
 async function fetchData( startDate, endDate = getToday(), count = 1){
@@ -51,18 +49,23 @@ function display(data){
        let { title, media_type, url, explanation, date, thumbnail_url  } = element;
 
        if(media_type === "image"){
-           media.innerHTML += `<h2 class="text-xl font-semibold mb-2">${title}</h2>
-           <div id="media" class="mb-4">
-           <img src=${url} />
-           </div>
-           <p id="description" class="text-gray-300">${explanation}</p>`
-        }else {
-            media.innerHTML += `<h2 class="text-xl font-semibold mb-2">${title}</h2>
-           <div id="media" class="mb-4">
-           <img src=${thumbnail_url} />
-           <span>${date}</span>
-           </div>
-           <p id="description" class="text-gray-300">${explanation}</p>`   
+           container.innerHTML += `<div
+          id="content"
+          class="mt-6 flex-col space-y-4 items-center justify-center">
+        <h2 class="text-xl font-semibold mb-2">${title}</h2>
+        <img src=${url} />
+        <p class="text-gray-500">${date}</p>
+        <p id="description" class="text-gray-300">${explanation}</p>
+        </div>`
+        } else {
+            container.innerHTML += `<div
+          id="content"
+          class="mt-6 flex-col space-y-4 items-center justify-center">
+        <h2 class="text-xl font-semibold mb-2">${title}</h2>
+        <img src=${thumbnail_url} />
+        <p class="text-gray-500">${date}</p>
+        <p id="description" class="text-gray-300">${explanation}</p>
+        </div>`
         }
     });
 }
