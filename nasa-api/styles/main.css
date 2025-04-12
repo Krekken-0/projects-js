@@ -1,19 +1,25 @@
-html {
-  height: 100%;
-}
-html body {
+/* html {
+  height: 100%; */
+
+/* html body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+} */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .container {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  /* position: relative; */
+  width: 100vw;
+  height: 100vh;
   background: black;
-  z-index: 2;
+  /* z-index: ; */
 }
 .container .text {
   color: #fff;
