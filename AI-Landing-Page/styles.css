@@ -58,6 +58,177 @@ header a:hover {
 }
 .button-box {
   position: relative;
-  width: 100%;
+  width: 100px;
   height: 45px;
+  margin-left: 25px;
+  /* first and last colors are same to provide smoothness */
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #2a46ff,
+    #0099ff,
+    #00aaa7
+  );
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+  border-radius: 10px;
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+}
+@keyframes animationGradient {
+  to {
+    background-position: 200%;
+  }
+}
+.head-right button {
+  position: absolute;
+  inset: 3px;
+  background-color: rgb(14 12 21);
+  color: lightgray;
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.head-right button:hover {
+  color: purple;
+}
+
+.hero {
+  position: relative;
+  width: 90%;
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.hero-blur-image {
+  position: absolute;
+  width: 100%;
+  top: -15%;
+}
+.hero-rings-image {
+  position: absolute;
+  height: 90%;
+  top: 90px;
+  opacity: 0.4;
+}
+.hero-icons-image {
+  width: 100%;
+  position: absolute;
+  top: 8%;
+}
+.hero h1 {
+  position: absolute;
+  top: 10%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  max-width: 1000px;
+  text-align: center;
+  color: white;
+}
+
+.hero h3 {
+  position: absolute;
+  top: 25%;
+  font-size: 20px;
+  max-width: 700px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+  color: gray;
+}
+
+.hero button {
+  position: absolute;
+  top: 35%;
+  border: none;
+  border-radius: 10px;
+  width: 140px;
+  height: 50px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  transition: 0.3s;
+}
+.hero button:hover {
+  opacity: 0.4;
+  color: purple;
+}
+
+.hero-image-box {
+  margin-top: 400px;
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  /* overflow: hidden; */
+  display: flex;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  /* first and last colors are same to provide smoothness */
+  background: linear-gradient(
+    to right,
+    #00aaa7,
+    #7f42a7,
+    #6600c5,
+    #1f2b9c,
+    #2a46ff,
+    #0099ff,
+    #00aaa7
+  );
+  background-size: 200%;
+  animation: animationGradient 2.5s linear infinite;
+}
+.hero-image-box .robot-box {
+  width: 98.5%;
+  height: 98%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50px;
+}
+
+.hero-image-box .robot-box img {
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: hard-light;
+}
+.hero-image-box .robot-box .robot-header {
+  height: 30px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.hero-image-box .element1 {
+  position: absolute;
+  top: 25%;
+  right: -15%;
+  backdrop-filter: blur(10px);
+  width: 25%;
+  border-radius: 15px;
+}
+.hero-image-box .element1 img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.514);
+}
+.hero-image-box .element2 {
+  position: absolute;
+  top: 45%;
+  left: -15%;
+  backdrop-filter: blur(10px);
+  width: 25%;
+  border-radius: 15px;
+}
+.hero-image-box .element2 img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.514);
+}
+.parallex {
+  transition: transform 1s linear;
 }
