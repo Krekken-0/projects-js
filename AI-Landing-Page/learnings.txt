@@ -1,0 +1,12 @@
+Some things that I have learned while doing this project-
+(1) I learned how elements are positioned in a webpage/html file. Like which elements to put in code first
+, which to put after.
+(2) I learned how to use divs properly, use flexbox to align content as needed.
+(3) I learned how to style the webpage using css, how to write proper classes, 
+on which classes to actually apply styles.
+(4) Learned simple animations, transitions, and some new properties which I didnt know even existed.
+(5) Learned how to make a website responsive using media queries.
+(6) Learned how to make a parallex effect using javascript with the help of mousemove event listener.
+(7) Learned how to display a signbox page with some animations and then close it.
+(8) I learned about some tools such as boxicons which can be used for icons, I used this for my close icon, and clippy
+which can be used to clip a element in your desired shape.
