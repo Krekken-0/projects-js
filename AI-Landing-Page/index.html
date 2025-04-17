@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MCBrain</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   </head>
   <body>
     <!-- container for all the content -->
@@ -27,7 +29,7 @@
           <a href="#">NEW ACCOUNT</a>
           <!-- a button for div bcz it will be easy to give a cool border -->
           <div class="button-box">
-            <button>SIGN IN</button>
+            <button id="signinButton">SIGN IN</button>
           </div>
         </div>
       </header>
@@ -47,7 +49,7 @@
           <div class="robot-box">
             <div class="robot-header">
             </div>
-              <img src="Images/robot.png" alt="robot-img">
+              <img src="Images/robot1.png" alt="robot-img">
           </div>
 
           <div class="element1">
@@ -57,6 +59,46 @@
             <img src="Images/element2.png" alt="">
           </div>
         </div>
+
+        <h4>Helping people create beautiful content at MCBRAIN.</h4>
+        <div class="companies-list">
+          <div class="company">
+            <img src="Images/company1.png" alt="memric logo">
+            <p>Memric</p>
+          </div>
+          <div class="company">
+            <img src="Images/company2.png" alt="memric logo">
+            <p>Ipsum</p>
+          </div>
+          <div class="company">
+            <img src="Images/company3.png" alt="memric logo">
+            <p>MCBRAIN</p>
+          </div>
+          <div class="company">
+            <img src="Images/company4.png" alt="memric logo">
+            <p>Queanex</p>
+          </div>
+          <div class="company">
+            <img src="Images/company5.png" alt="memric logo">
+            <p>Synthet</p>
+          </div>
+        </div>
+
+      </section>
+
+      <div id="signinPage" class="signin-page-box">
+        <div class="signin-page">
+          <h1>
+            Sign In
+          </h1>
+          <input type="text" placeholder="User Name">
+          <input type="email" placeholder="Email">
+          <input type="password"  placeholder="Password">
+          <button>Sign In</button>
+          <p>Log In</p>
+          <div id="closeIcon"><i class='bx bx-x'></i></div>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
