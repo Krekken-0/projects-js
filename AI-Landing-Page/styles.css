@@ -334,8 +334,9 @@ header a:hover {
 /* COMPANIES SECTION */
 .hero h4{
   position: absolute;
-  bottom: 12%;
-  color: gray
+  bottom:12%;
+  color: gray;
+  font-size: 15px;
 }
 .companies-list{
   display: flex;
@@ -410,7 +411,8 @@ header a:hover {
     top: 35%
   }
   .hero-image-box{
-    height: 250px
+    height: 250px;
+    bottom: 10%
   }
   .hero-image-box .element1{
     width: 140px;
