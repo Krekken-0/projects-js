@@ -331,3 +331,101 @@ header a:hover {
     top: 60%;
   }
 }
+/* COMPANIES SECTION */
+.hero h4{
+  position: absolute;
+  bottom: 12%;
+  color: gray
+}
+.companies-list{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  bottom: 3%;
+  width: 100%;
+}
+.companies-list .company {
+  display: flex;
+  align-items: center;
+}
+.companies-list .company img{
+  height: 40px;
+  margin-right: 10px;
+
+}
+.companies-list .company p{
+  font-size: 30px;
+  font-weight: bold;
+}
+/* TABLET RESPONSIVE */
+@media screen and (max-width: 1000px) {
+  header{
+    padding: 10px 10px;
+  }
+  header ul{
+    min-width: 300px;
+  }
+  .head-right a{
+    margin-right: -20px
+  }
+  .hero h1{
+    font-size: 35px
+  }
+  .hero-image-box{
+    height: 450px;
+  }
+  .hero-image-box .element1{
+    right: 5%;
+    top: -12%;
+  }
+  .hero-image-box .element2{
+    left: 5%;
+    top: 95%;
+  }
+  .companies-list .company img{
+    height: 35px
+  }
+  .companies-list .company p{
+    font-size: 20px;
+  }
+  .signin-page-box{
+    width: 70%;
+  }
+}
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 700px){
+  header ul{
+    display: none
+  }
+  .hero h1{
+    top: 6%;
+  }
+  .hero h3{
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 22px;
+
+  }
+  .hero button{
+    top: 35%
+  }
+  .hero-image-box{
+    height: 250px
+  }
+  .hero-image-box .element1{
+    width: 140px;
+    height: 50px;
+    top: -15%;
+  }
+  .hero-image-box .element2{
+    width: 140px;
+    height: 50px
+  }
+  .companies-list {
+    flex-wrap: wrap;
+    max-width: 400px;
+  }
+  .signin-page input{
+    height: 20px
+  }
+}
