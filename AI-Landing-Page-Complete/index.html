@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCBrain</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  </head>
+  <body>
+    <!-- container for all the content -->
+    <div class="container">
+      <!-- header tag for elements at the top of page-->
+      <header>
+        <!-- div which contains left side elements -->
+        <div class="head-left">
+          <img src="Images/logo.png" alt="logo" />
+          <h1>MCBRAIN</h1>
+        </div>
+        <ul>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">HOW TO USE</a></li>
+          <li><a href="#">ROADMAP</a></li>
+        </ul>
+        <!-- div for right side elements -->
+        <div class="head-right">
+          <a href="#">NEW ACCOUNT</a>
+          <!-- a button for div bcz it will be easy to give a cool border -->
+          <div class="button-box">
+            <button id="signinButton">SIGN IN</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="hero">
+        <img class="hero-blur-image" src="Images/hero blur img.png" />
+        <img class="hero-icons-image parallex" data-speed="4" src="Images/hero icons img.png" alt="" />
+        <img class="hero-rings-image" src="Images/hero rings img.png" alt="" />
+        
+        <h1>Discover the Endless Possibilities of AI Conversation with MCBRAIN </h1>
+        <h3>Unleash the power of AI with MCBRAIN. Enhance your producivity with
+          MCBRAIN, the ultimate OpenAI-powered chat app. </h3>
+
+        <button>Get Started</button>
+
+        <div class="hero-image-box">
+          <div class="robot-box">
+            <div class="robot-header">
+            </div>
+              <img src="Images/robot1.png" alt="robot-img">
+          </div>
+
+          <div class="element1">
+            <img src="Images/element1.png" alt="">
+          </div>
+          <div class="element2">
+            <img src="Images/element2.png" alt="">
+          </div>
+        </div>
+
+        <h4>Helping people create beautiful content at MCBRAIN.</h4>
+        <div class="companies-list">
+          <div class="company">
+            <img src="Images/company1.png" alt="memric logo">
+            <p>Memric</p>
+          </div>
+          <div class="company">
+            <img src="Images/company2.png" alt="memric logo">
+            <p>Ipsum</p>
+          </div>
+          <div class="company">
+            <img src="Images/company3.png" alt="memric logo">
+            <p>MCBRAIN</p>
+          </div>
+          <div class="company">
+            <img src="Images/company4.png" alt="memric logo">
+            <p>Queanex</p>
+          </div>
+          <div class="company">
+            <img src="Images/company5.png" alt="memric logo">
+            <p>Synthet</p>
+          </div>
+        </div>
+
+      </section>
+
+      <div id="signinPage" class="signin-page-box">
+        <div class="signin-page">
+          <h1>
+            Sign In
+          </h1>
+          <input type="text" placeholder="User Name">
+          <input type="email" placeholder="Email">
+          <input type="password"  placeholder="Password">
+          <button>Sign In</button>
+          <p>Log In</p>
+          <div id="closeIcon"><i class='bx bx-x'></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

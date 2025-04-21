@@ -1,0 +1,366 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14 12 21);
+    color: lightgray;
+    font-family: monospace;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0.5px solid rgba(110, 101, 114, 0.5);
+    /* high z index so that header stays on top
+    of all other elements */
+    z-index: 999;
+    background-color: rgba(14, 12, 21, 0.5);
+    backdrop-filter: blur(20px);
+  }
+  .head-left {
+    display: flex;
+    align-items: center;
+  }
+  .head-left img {
+    width: 10vw;
+    max-width: 50px;
+    margin-right: 15px;
+  }
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+  }
+  header ul li {
+    list-style: none;
+  }
+  header a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 900;
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  header a:hover {
+    color: lightgray;
+    text-shadow: 0 0 5px white;
+  }
+  .head-right {
+    display: flex;
+    align-items: center;
+  }
+  .button-box {
+    position: relative;
+    width: 10vw;
+    min-width: 75px;
+    max-width: 100px;
+    height: 5vh;
+    max-height: 50px;
+    margin-left: 25px;
+    /* first and last colors are same to provide smoothness */
+    background: linear-gradient(
+      to right,
+      #00aaa7,
+      #7f42a7,
+      #6600c5,
+      #1f2b9c,
+      #2a46ff,
+      #0099ff,
+      #00aaa7
+    );
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+  }
+  @keyframes animationGradient {
+    to {
+      background-position: 200%;
+    }
+  }
+  .button-box button {
+    position: absolute;
+    inset: 3px;
+    background-color: rgb(14 12 21);
+    color: lightgray;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .head-right button:hover {
+    color: purple;
+  }
+  
+  .hero {
+    position: relative;
+    width: 95%;
+    height: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero-blur-image {
+    position: absolute;
+    width: 100%;
+    top: -15%;
+  }
+  .hero-rings-image {
+    position: absolute;
+    height: 90%;
+    top: 90px;
+    opacity: 0.4;
+  }
+  .hero-icons-image {
+    width: 100%;
+    position: absolute;
+    top: 8%;
+  }
+  .hero h1 {
+    position: absolute;
+    top: 10%;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 50px;
+    max-width: 1000px;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero h3 {
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    max-width: 700px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    text-align: center;
+    color: gray;
+  }
+  
+  .hero button {
+    position: absolute;
+    top: 35%;
+    border: none;
+    border-radius: 10px;
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    clip-path: polygon(0 0, 75% 0%, 100% 50%, 100% 100%, 0 100%, 0% 50%);
+    transition: 0.3s;
+  }
+  .hero button:hover {
+    opacity: 0.4;
+    color: purple;
+  }
+  
+  .hero-image-box {
+    margin-top: 400px;
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    /* overflow: hidden; */
+    display: flex;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    /* first and last colors are same to provide smoothness */
+    background: linear-gradient(
+      to right,
+      #00aaa7,
+      #7f42a7,
+      #6600c5,
+      #1f2b9c,
+      #2a46ff,
+      #0099ff,
+      #00aaa7
+    );
+    background-size: 200%;
+    animation: animationGradient 2.5s linear infinite;
+  }
+  .hero-image-box .robot-box {
+    width: 98.5%;
+    height: 98%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+  }
+  
+  .hero-image-box .robot-box img {
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: hard-light;
+  }
+  .hero-image-box .robot-box .robot-header {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+  }
+  
+  .hero-image-box .element1 {
+    position: absolute;
+    top: 25%;
+    right: -15%;
+    backdrop-filter: blur(10px);
+    width: 25%;
+    border-radius: 15px;
+  }
+  .hero-image-box .element1 img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.514);
+  }
+  .hero-image-box .element2 {
+    position: absolute;
+    top: 45%;
+    left: -15%;
+    backdrop-filter: blur(10px);
+    width: 25%;
+    border-radius: 15px;
+  }
+  .hero-image-box .element2 img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.514);
+  }
+  .parallex {
+    transition: transform 1s linear;
+  }
+  /* Sign IN page */
+  .signin-page-box{
+    position: fixed;
+    top: 60%;
+    width: 30%;
+    height: 60vh;
+    scale: 0;
+    filter: blur(10px)
+  }
+  .signin-page{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14 12 21);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.445);
+    border-radius: 20px;
+  }
+  .signin-page h1{
+    font-size: 40px;
+    font-weight: bold
+  }
+  .signin-page input{
+    padding: 7.5px 30px;
+    border: none;
+    outline: none;
+    width: 60%;
+    height: 40px;
+    clip-path: polygon(20% 0%, 90% 0, 100% 30%, 100% 80%, 100% 100%, 0 100%, 0% 80%, 0 0);
+    border-radius: 5px;
+    margin-bottom: 5%;
+    background-color: lightgray;
+  }
+  .signin-page button{
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #7e00d2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white
+  }
+  .signin-page p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: gray;
+    /* border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+    color: white
+  }
+  .signin-page div{
+    position: absolute;
+    top: 3%;
+    right:3%;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .signin-page div:hover{
+    opacity: 0.7
+  }
+  /* SIGN IN PAGE ANIMATION */
+  .openSignin{
+    animation: openSigninAnimation 0.7s forwards;
+  }
+  @keyframes openSigninAnimation {
+    to{
+      filter: blur(0);
+      scale: 1;
+      top: 30%;
+    }
+  }
+  /* CLOSE SIGNIN PAGE ANIMATION */
+  .closeSignin{
+    animation: closeSigninAnimation 0.7s forwards
+  }
+  @keyframes closeSigninAnimation {
+    from{
+      filter: blur(0);
+      scale: 1;
+      top: 30%;
+    }
+    to {
+      filter: blur(10px);
+      scale: 0;
+      top: 60%;
+    }
+  }
+  /* COMPANIES SECTION */
+  .hero h4{
+    position: absolute;
+    bottom:12%;
+    color: gray;
+    font-size: 15px;
+  }
+  .companies-list{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    bottom: 3%;
+    width: 90%;
+  }
+  .companies-list .company {
+    display: flex;
+    align-items: center;
+  }
+  .companies-list .company img{
+    height: 40px;
+    margin-right: 10px;
+  
+  }
+  .companies-list .company p{
+    font-size: 30px;
+    font-weight: bold;
+  }
